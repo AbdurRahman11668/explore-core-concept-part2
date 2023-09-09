@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>My Awesome Dom de baba</h1>
+            <ul>
+                <li>Jalali Set</li>
+                <li>Shafayat</li>
+                <li>Bonobash</li>
+            </ul>
+        </section>
+        <section class="fruits-contanier">
+            <h1 id="fruits-title" class=" random title blue-bg">Fruits I like</h1>
+            <ul>
+                <li>JackFruite</li>
+                <li>Mango</li>
+                <li>Apple</li>
+            </ul>
+        </section>
+        <section id="places-container">
+            <h1 id="places-title">Places I like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">Cox's Bazar</li>
+                <li class="important-places">Saint Martin</li>
+                <li class="important-places">Khagrachori</li>
+                <li class="important-places">shalbon</li>
+            </ul>
+        </section>
+    </main>
+    <script src="append.js"></script>
+    <script src="dom.js"></script>
+    <script src="styleIn.js"></script>
+    <script>
+        // const fruitsTitle = document.getElementById('fruits-title');
+        // fruitsTitle.innerHTML = 'Fruits Changed by JS';
+
+        // const places = document.getElementsByClassName('important-places');
+        // for(const place of places){
+        //     console.log(place.innerText);
+        // }
+
+        // //querySelecctorAll
+        // const oneLi = document.querySelector('.fruits-contaier li');
+        // console.log(oneLi);
+
+        // const someLi = document.querySelectorAll('.fruits-contaier li');
+        // for(const li of someLi){
+        //     console.log(li.innerText);
+        // }
+
+        // getAttribute
+        // const title = document.getElementById('fruits-title');
+        // const allTitle = title.getAttribute('class');
+        // console.log(allTitle);
+        // const classList = title.classList;
+        // console.log(classList);
+        // const classListRemove = title.classList.remove('blue-bg');
+        // const removed = title.classList
+        // console.log(removed);
+        // const classListAdd = title.classList.add('purple-bg');
+        // const added = title.classList
+        // console.log(added);
+
+
+        // setAttribute
+        // const title = document.getElementById('fruits-title');
+        // const set = title.setAttribute('title', 'Tooltip set by Js');
+        // console.log(set);
+
+
+        // innerHtml
+        // const fruitsContainer = document.getElementsByClassName('fruits-contanier')[0].innerhtml = '<h2>This is my fruits container</h2>';
+        // console.log(fruitsContainer);
+
+    </script>
+</body>
+
+</html>

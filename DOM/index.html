@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .special h3{
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Exploring DOM</h3>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minus voluptatibus, quis magnam, corporis amet fuga nostrum fugiat nemo quibusdam suscipit aperiam! Adipisci, rerum minus! Dolor, vitae! Perferendis, ab nemo.</p>
+            </article>
+            <article class="special">
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Eaque et deserunt nulla. Totam sunt amet ad pariatur fugiat culpa vero a, laborum, illo provident consectetur inventore eius expedita dignissimos corrupti nisi atque aliquam nam iure excepturi commodi! Quam?</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Ab tempora totam cum, hic minima culpa dignissimos quo tenetur aliquid inventore temporibus suscipit quia, repellendus enim ea, fugit consequatur cupiditate. Sint, a ullam. Cumque perferendis cupiditate perspiciatis nemo quo.</p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        // var first = document.getElementById('first');
+        // first.style.background = 'yellow';
+        // first.style.color = 'green';
+        // first.style.fontSize = '45px';
+
+        /*var authors = document.getElementsByClassName('author');
+        for(var i = 0; i<authors.length; i++){
+            var element = authors[i];
+            console.log(element.innerHTML);
+            element.innerHTML = 'Lekhok-' +(i + 1);
+            element.style.background = 'lightblue';
+            element.style.margin = '10px';
+        }*/
+        var authors = document.querySelectorAll('.special h3');
+        for(var i = 0; i<authors.length; i++){
+            var element = authors[i];
+            // console.log(element.innerHTML);
+            element.innerHTML = 'Lekhok-' + (i + 1);
+            element.setAttribute('title', 'All author is same');
+            element.style.background = 'lightblue';
+            element.style.margin = '10px';
+        }
+    </script>
+</body>
+</html>
